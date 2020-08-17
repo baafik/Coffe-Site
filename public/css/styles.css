@@ -23,7 +23,7 @@ nav {
 nav li a {
     color: rgb(165, 75, 11);
     font-size: 20px;
-
+    border-bottom: 1px solid transparent;
 }
 
 nav li a:hover {
@@ -69,15 +69,19 @@ nav li a:hover {
     color: bisque;
 }
 
+.btn2:hover {
+    color: bisque
+}
+
 .btn3 {
-    background-color: rgb(165, 75, 11);
-    color: bisque;
+    color: rgb(165, 75, 11);
+    border: 1px solid rgb(165, 75, 11);
+    background-color: bisque;
 }
 
 .btn3:hover {
-    border: 1px solid rgb(165, 75, 11);
-    color: rgb(165, 75, 11);
-    background-color: bisque;
+    color: bisque;
+    background-color: rgb(165, 75, 11);
 }
 
 .subscription {
@@ -95,6 +99,10 @@ nav li a:hover {
     font-size: 40px;
 }
 
+/* .delivery {
+    border: 1px solid rgb(165, 75, 11);
+} */
+
 .delivery p {
     text-align: center;
     font-weight: bold;
@@ -111,4 +119,19 @@ nav li a:hover {
 
 .subscription p {
     max-width: 400px;
+}
+
+button.float-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    background-color: rgb(165, 75, 11);
+    
+    color: bisque;
+}
+
+.float-btn button {
 }

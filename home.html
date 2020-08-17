@@ -34,9 +34,7 @@
     <!-- header to contain the navigation -->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#"
-          ><i class="fa fa-coffee" aria-hidden="true"></i> Express Coffee</a
-        >
+        <a class="navbar-brand" href="#"> Express Coffee</a>
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -59,10 +57,21 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
           </ul>
+          <button
+            class="btn btn3"
+            data-toggle="modal"
+            data-target="#ordermodal"
+          >
+            Place an order
+          </button>
         </div>
       </nav>
     </header>
+
     <!-- main tag to contain the content of the webpage -->
     <main>
       <!-- add a carousel in the section -->
@@ -84,74 +93,6 @@
             </div>
           </div>
         </div>
-        <!-- <div id="homepage" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#homepage" data-slide-to="0" class="active"></li>
-            <li data-target="#homepage" data-slide-to="1"></li>
-            <li data-target="#homepage" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-               add class to images in the carousel and control it from the styles.css 
-              <img
-                src="./public/assets/images/pexels-igor-haritanovich-1695052.jpg"
-                alt="First slide"
-                class="carousel-img"
-              />
-              <div
-                class="carousel-caption d-flex justify-content-center  d-md-block"
-              >
-                <h3>THE LEGEND OF COFFEE</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                  aut dolores, accusantium at in molestias velit earum dolor et,
-                  deserunt quia harum reprehenderit rerum quaerat consequatur
-                  nemo magni illo maxime.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./public/assets/images/pexels-adrianna-calvo-597929.jpg"
-                alt="Second slide"
-                class="carousel-img"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./public/assets/images/pexels-porapak-apichodilok-373639.jpg"
-                alt="Third slide"
-                class="carousel-img"
-              />
-              <div class="carousel-caption d-none d-md-block">
-                <h3>Title</h3>
-                <p>Description</p>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#homepage"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#homepage"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div> -->
       </section>
 
       <!-- featured coffee types -->
@@ -227,7 +168,12 @@
                   We deliver across the nation. Just tell us where we can find
                   you
                 </h5>
-                <button class="btn btn3" type="submit">
+                <button
+                  class="btn btn3"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#ordermodal"
+                >
                   Make an order
                 </button>
               </div>
@@ -319,8 +265,7 @@
                 name=""
                 id=""
                 class="form-control"
-                placeholder=""
-                aria-describedby="helpId"
+                placeholder="Eg. frimpongi50@mail.com"
               />
             </div>
             <div class="col-sm-3">
@@ -332,6 +277,102 @@
     </main>
     <!-- footer to contain some of the quick-links -->
     <footer></footer>
+    <!-- order modal -->
+    <div
+      class="modal fade"
+      id="ordermodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Place your order
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/" method="post" class="p-3">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" />
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Email</label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Phone</label>
+                  <input
+                    class="form-control"
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Type</label>
+                  <select class="form-control" name="type" id="type">
+                    <option value="French">French</option>
+                    <option value="British">British</option>
+                    <option value="Tropical">Tropical</option>
+                    <option value="Deutsche">Deutsche</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Quantity</label>
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="quantity"
+                    id="quantity"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">GPS Address</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="address"
+                  id="address"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary btn-sm">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
