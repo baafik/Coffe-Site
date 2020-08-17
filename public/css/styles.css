@@ -133,5 +133,21 @@ button.float-btn {
     color: bisque;
 }
 
-.float-btn button {
+.price-item {
+    border: 1px solid rgb(165, 75, 11);
+    color: rgb(165, 75, 11);
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.price-item ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.price-item ul li {
+    list-style: none;
+    font-size: 20px;
 }

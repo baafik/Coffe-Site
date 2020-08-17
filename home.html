@@ -34,7 +34,7 @@
     <!-- header to contain the navigation -->
     <header>
       <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#"> Express Coffee</a>
+        <a class="navbar-brand" href="/"> Express Coffee</a>
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -49,16 +49,16 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="#contact-us">Contact us</a>
             </li>
           </ul>
           <button
@@ -96,7 +96,7 @@
       </section>
 
       <!-- featured coffee types -->
-      <section class="container">
+      <section class="container" id="menu">
         <div>
           <h4 class="sub-header text-center">
             What is buzzing at Express Coffee?
@@ -144,8 +144,78 @@
         <hr />
       </section>
 
+      <!-- section for pricing -->
+      <section class="container" id="pricing">
+        <h4 class="sub-header text-center">
+          We offer what you can afford
+        </h4>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="price-item">
+              <h4>Major</h4>
+              <h4>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </h4>
+              <hr />
+              <ul>
+                <li>1Kg of Coffee</li>
+                <li>Weekly refill</li>
+                <li>Weekend delivery</li>
+              </ul>
+              <button class="btn btn1 btn-block">Choose</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="price-item">
+              <h4>Lieutenant Colonel</h4>
+              <h4>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </h4>
+              <hr />
+              <ul>
+                <li>2Kg of Coffee</li>
+                <li>Weekly refill</li>
+                <li>Weekend delivery</li>
+                <li>Variety of coffees</li>
+              </ul>
+              <button class="btn btn1 btn-block">Choose</button>
+              <small
+                ><i class="fa fa-check-circle" aria-hidden="true"></i> Best
+                selling package</small
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="price-item">
+              <h4>Colonel</h4>
+              <h4>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </h4>
+              <hr />
+              <ul>
+                <li>3Kg of Coffee</li>
+                <li>Weekly refill</li>
+                <li>Delivery at request</li>
+                <li>Variety of coffees</li>
+                <li>Free cups</li>
+              </ul>
+              <button class="btn btn1 btn-block">
+                Choose
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
       <!-- section for delivery -->
-      <section class="container">
+      <section class="container" id="services">
         <div>
           <h4 class="sub-header text-center">
             Can't come? We will come to you
@@ -240,6 +310,61 @@
                 We deliver
               </p>
             </div>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <!-- section for contact and message -->
+      <section class="container" id="contact-us">
+        <div>
+          <h4 class="sub-header text-center">
+            What is buzzing at Express Coffee?
+          </h4>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="./public/assets/images/pexels-adrianna-calvo-597929.jpg"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div style="border: 1px solid rgb(165, 75, 11);" class="col-md-6 p-4">
+            <h5>Send us a message</h5>
+            <hr />
+            <form action="/" method="post">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    name="contact-name"
+                    id="contact-name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="phone">Phone</label>
+                  <input
+                    type="tel"
+                    name="contact-phone"
+                    id="contact-phone"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  name="contact-message"
+                  id="contact-message"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button class="btn btn3">Send message</button>
+            </form>
           </div>
         </div>
         <hr />
