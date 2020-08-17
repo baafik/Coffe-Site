@@ -21,6 +21,14 @@
       href="https://fonts.googleapis.com/css2?family=Cookie&family=Lora:ital@0;1&display=swap"
       rel="stylesheet"
     />
+
+    <!-- add the font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <!-- header to contain the navigation -->
@@ -192,6 +200,7 @@
             </div>
           </div>
         </div>
+        <hr />
       </section>
 
       <!-- section for delivery -->
@@ -210,6 +219,7 @@
               />
             </div>
             <div
+              style="background-color: bisque;"
               class="col-md-6 d-flex align-items-center justify-content-center"
             >
               <div>
@@ -217,13 +227,76 @@
                   We deliver across the nation. Just tell us where we can find
                   you
                 </h5>
-                <button class="btn btn-info" type="submit">
+                <button class="btn btn3" type="submit">
                   Make an order
                 </button>
               </div>
             </div>
           </div>
+          <div class="row mt-3 mb-3">
+            <div
+              class="col-md-4 p-3 d-flex align-items-center flex-column delivery"
+            >
+              <div
+                class="rounded-circle delivery-count justify-content-center align-items-center d-flex"
+              >
+                <h3
+                  style="
+                    font-size: 80px;
+                    color: rgb(165, 75, 11);
+                    font-weight: bold;
+                  "
+                >
+                  <i class="fa fa-file-text" aria-hidden="true"></i>
+                </h3>
+              </div>
+              <p>
+                Tell us your preference
+              </p>
+            </div>
+            <div
+              class="col-md-4 p-3 d-flex align-items-center flex-column delivery"
+            >
+              <div
+                class="rounded-circle delivery-count justify-content-center align-items-center d-flex"
+              >
+                <h3
+                  style="
+                    font-size: 80px;
+                    color: rgb(165, 75, 11);
+                    font-weight: bold;
+                  "
+                >
+                  <i class="fa fa-money" aria-hidden="true"></i>
+                </h3>
+              </div>
+              <p>
+                Make payment
+              </p>
+            </div>
+            <div
+              class="col-md-4 p-3 d-flex align-items-center flex-column delivery"
+            >
+              <div
+                class="rounded-circle delivery-count justify-content-center align-items-center d-flex"
+              >
+                <h3
+                  style="
+                    font-size: 80px;
+                    color: rgb(165, 75, 11);
+                    font-weight: bold;
+                  "
+                >
+                  <i class="fa fa-truck" aria-hidden="true"></i>
+                </h3>
+              </div>
+              <p>
+                We deliver
+              </p>
+            </div>
+          </div>
         </div>
+        <hr />
       </section>
 
       <!-- section for email subscription -->
@@ -251,7 +324,7 @@
               />
             </div>
             <div class="col-sm-3">
-              <button class="btn btn-info" type="submit">Subscribe</button>
+              <button class="btn btn3" type="submit">Subscribe</button>
             </div>
           </div>
         </form>

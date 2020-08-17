@@ -59,7 +59,7 @@ nav li a:hover {
     background-color: bisque;
 }
 
-.btn:hover {
+.btn1:hover {
     background-color: rgb(165, 75, 11);
     color: bisque;
 }
@@ -67,6 +67,17 @@ nav li a:hover {
 .btn2 {
     border: 1px solid bisque;
     color: bisque;
+}
+
+.btn3 {
+    background-color: rgb(165, 75, 11);
+    color: bisque;
+}
+
+.btn3:hover {
+    border: 1px solid rgb(165, 75, 11);
+    color: rgb(165, 75, 11);
+    background-color: bisque;
 }
 
 .subscription {
@@ -82,6 +93,20 @@ nav li a:hover {
     font-family: 'Cookie', cursive;
     margin-bottom: 20px;
     font-size: 40px;
+}
+
+.delivery p {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(165, 75, 11);
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.delivery-count {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
 }
 
 .subscription p {
