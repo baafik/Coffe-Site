@@ -1,0 +1,89 @@
+header {
+    color: bisque !important;
+}
+
+h5 {
+    font-size: 25px !important;
+}
+h5, p {
+    font-family: 'Lora', serif !important;
+}
+
+nav {
+    background-color: bisque; 
+}
+
+.navbar-brand {
+    color: rgb(165, 75, 11) ;
+    font-weight: bold;
+    font-family: 'Lora', serif !important;
+    font-size: 30px;
+}
+
+nav li a {
+    color: rgb(165, 75, 11);
+    font-size: 20px;
+
+}
+
+nav li a:hover {
+    border-bottom: 1px solid rgb(165, 75, 11);
+    color: rgb(165, 75, 11)
+}
+
+.landing {
+    height: 700px;
+}
+
+.landing-image {
+    width: 100%;
+    height: 660px;
+    background-image: url(../assets/images/pexels-igor-haritanovich-1695052.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: bisque;
+    text-align: center;
+}
+
+.landing-image h3 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing-image p {
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.btn1 {
+    background-color: bisque;
+}
+
+.btn:hover {
+    background-color: rgb(165, 75, 11);
+    color: bisque;
+}
+
+.btn2 {
+    border: 1px solid bisque;
+    color: bisque;
+}
+
+.subscription {
+    height: 350px;
+}
+.subscription form {
+    padding: 50px;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.sub-header {
+    font-family: 'Cookie', cursive;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.subscription p {
+    max-width: 400px;
+}
